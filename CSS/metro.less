@@ -1,0 +1,186 @@
+@unit: 10px;
+@sub-unit: @unit / 4;
+
+@color: #1D1D1D;
+
+//*
+
+@font-size-body     : 15pt;
+@font-size-btn      : 13pt;
+@font-input         : 12pt;
+@font-size-title1   : 42pt;
+@font-size-title2   : 20pt;
+@font-size-label    : 16pt;
+
+@width-label        : 300px;
+
+@width-textarea     : 600px;
+@height-textarea    : 400px;
+
+//*/
+/*
+@font-size-body: 2 * @sub-unit;
+@font-size-title1: 2 * @unit;
+@font-size-title2: 1 * @unit;
+*/
+
+.hide {
+    display: none;
+}
+
+body {
+    color       : @color;
+
+    font-family : "OpenSansLightRegular";
+    font-size   : @font-size-body;
+
+    margin-top  : 5 * @unit;
+    margin-left : 6 * @unit;
+}
+
+ul.lista-menu {
+    list-style-type: none;
+    font-size   : @font-size-title2;
+
+    li {
+        margin-bottom: 2 * @unit;
+        a {
+            // text-decoration: none;
+            color: @color;
+        }
+    }
+}
+
+h2 {
+    font-size       : @font-size-title2;
+    margin-bottom   : 2 * @unit;
+}
+
+form label {
+    font-size       : @font-size-label;
+}
+
+/*
+.form-horizontal .control-group .control-label {
+    font-size       : @font-size-label;
+}
+*/
+
+select {
+    height: 35px;
+    font-size   : 20px;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    /*
+    height      : @font-size-label + 5pt;
+    font-size   : @font-size-label - 2pt;
+    */
+    height      : 30px;
+    font-size   : 20px;
+}
+
+a.link-atras {
+    font-size: 40px; // @font-size-title2;
+}
+
+a.link-atras:hover {
+    font-size: 40px; // @font-size-title2;
+    text-decoration: none;
+}
+
+.btn {
+    height: 35px;
+    font-size: 20px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/*
+.btn:hover {
+    background: #D8D8D8;
+    border-color: #D8D8D8;
+}
+
+.btn {
+    color       : @color;
+    font-size   : @font-size-btn;
+
+    background: #CCC;
+    border-color: #CCC;
+    text-decoration: none;
+    border: 1px #E2E2E2 solid;
+    padding: 5px 20px;
+    margin: 0 5px;
+    // color: white !important;
+    cursor: pointer;
+    min-width: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border-radius: 0;
+}
+
+.row {
+    margin-bottom: @unit;
+    display: block;
+    clear: both;
+
+    label {
+        font-family : "OpenSansSemiboldRegular";
+        font-size   : @font-size-body;
+        width       : @width-label;
+        display     : block;
+        float       : left;
+    }
+
+    div.radio {
+        display: block;
+        float: left;
+        // clear: both;
+        // margin-top: -6 * @sub-unit;
+
+        label.radio {
+            font-family: "OpenSansLightRegular";
+            font-size: @font-input;
+            display: block;
+            clear: both;
+            // margin-left: @width-label;
+            margin-bottom : 3 * @sub-unit;
+        }
+    }
+
+    input {
+        font-family: "OpenSansLightRegular";
+        font-size: @font-input;
+    }
+
+    select {
+        font-family: "OpenSansLightRegular";
+        font-size: @font-input;
+    }
+
+    textarea {
+        width   : @width-textarea;
+        height  : @height-textarea;
+        font-family: "OpenSansLightRegular";
+        font-size: @font-input;
+    }
+
+}
+
+.title1 {
+    font-family: "OpenSansLightRegular";
+    font-size: @font-size-title1;
+
+    margin-bottom: 2 * @unit;
+}
+
+.title2 {
+    font-family: "OpenSansLightRegular";
+    font-size: @font-size-title2;
+
+    margin-bottom: 2 * @unit;
+}
+*/
