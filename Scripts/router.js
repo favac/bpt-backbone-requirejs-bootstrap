@@ -14,9 +14,7 @@ define(function (require, exports, module) {
         routes: {
             // login de la aplicación (pantalla de entrada)
             ''                          : 'login',
-            'inicio'                    : 'inicio',
-            'nuevaFactura/:cliente'     : 'nuevaFactura',
-            'cliente'                   : 'cliente'
+            'inicio'                    : 'inicio'
         },
 
         // funcion de inicializacion
@@ -43,12 +41,6 @@ define(function (require, exports, module) {
         // *************************************************************************
         // FUNCIONES DE NAVEGACION
         // *************************************************************************
-        // pagina del  nuevo cliente
-        cliente: function (ruta) {
-            var cliente = require("Views/cliente/nuevo");
-            var v = new cliente.view();
-            v.render();
-        },
 
         // Pagina de inicio
         inicio: function () {
@@ -63,17 +55,7 @@ define(function (require, exports, module) {
             var v = new login.view();
             v.render();
 
-        },
-
-        // página de la nueva factura
-        nuevaFactura: function (cliente) {
-            var fact = require("Views/facturacion/nuevo");
-            var v = new fact.view({
-                cliente: cliente
-            });
-            v.render();
         }
-
     });
 
     // inicializo la aplicaci{on al cargar el dom
